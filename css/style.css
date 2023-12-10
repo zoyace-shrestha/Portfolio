@@ -279,8 +279,14 @@ header {
 }
 
 .service {
-  max-width: 500px;
+  max-width: 33.33%;
   margin: 0 auto;
+}
+
+@media (max-width: 799px) {
+  .service {
+    max-width: 500px;
+  }
 }
 
 
@@ -332,6 +338,35 @@ header {
   opacity: 0.8;
 }
 
+.about-body {
+  background-color: #303030;
+  color: #e1e1e1;
+}
+
+.about-image {
+  max-width: 70%;
+  margin-bottom: 4%;
+}
+
+#Wrk-Btn {
+  margin-top: 10px;
+  padding: 5px 12px;
+  border-radius: 5px;
+  border: none;
+  color: black;
+}
+
+#Wrk-Btn:hover {
+  padding: 5px 12px;
+  background-color: var(--clr-accent);
+  border-radius: 5px;
+}
+
+#Wrk-Btn a {
+  text-decoration: none;
+  color: black;
+}
+
 /* footer */
 .footer {
   background: #111;
@@ -380,6 +415,10 @@ header {
   padding: 0 2em 2em;
   max-width: 1000px;
   margin: 0 auto;
+}
+
+.inLine-Link {
+  color: var(--clr-accent);
 }
 
 @media (max-width: 320px) {
