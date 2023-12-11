@@ -559,6 +559,7 @@ header {
 .toggleBox {
   background-color: linear-gradient(145deg, #e1e1e1, #fff);
   box-shadow: 3px 3px 4px #e6e6e6;
+  margin-top: 10px;
 }
 
 .light .toggle .fa-sun {
