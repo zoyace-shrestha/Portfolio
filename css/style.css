@@ -427,6 +427,10 @@ header {
     grid-template-columns: 1fr;
     row-gap: 10px;
   }
+
+  .service {
+    margin-bottom: 35px;
+  }
 }
 
 @media (min-width: 600px) {
@@ -602,4 +606,92 @@ header {
 
 .intro input {
   display: none;
+}
+
+.arrows-body {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.arrows {
+  position: relative;
+  width: 5px;
+  height: 5px;
+  border-top: 2px solid var(--clr-accent);
+  border-right: 2px solid var(--clr-accent);
+  transform: rotate(45deg);
+  animation: arrow-load 2s infinite;
+  background-color: var(--clr-accent);
+  top: -15px;
+}
+
+.arrows:nth-child(1) {
+  right: 25px;
+  animation-delay: -0.4s;
+}
+
+.arrows:nth-child(2) {
+  animation-delay: -0.2s;
+}
+
+.arrows:nth-child(3) {
+  left: 25px;
+}
+
+.job-and-resume {
+  display: flex;
+  align-items: center;
+}
+
+.servies-github {
+  color: white;
+}
+
+.servies-github:hover {
+  color: var(--clr-accent);
+}
+
+@media (max-width :600px) {
+  .job-and-resume {
+    flex-direction: column;
+    align-items: normal;
+  }
+
+  .arrows {
+    display: none;
+  }
+}
+
+@keyframes arrow-load {
+  0% {
+    opacity: 0;
+    transform: rotate(45deg) translate(0px, 0px);
+  }
+
+  0% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+    transform: rotate(45deg) translate(0px, 0px);
+  }
+
+}
+
+.resume-icon {
+  color: var(--clr-light);
+}
+
+.resume-icon:hover {
+  color: var(--clr-dark);
+}
+
+@media (max-width: 768px) {
+  .arrows {
+    top: -25px;
+  }
 }
