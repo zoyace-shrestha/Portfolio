@@ -353,6 +353,12 @@ header {
   margin-bottom: 4%;
 }
 
+@media (max-width:600px) {
+  .about-image {
+    width: 100%;
+  }
+}
+
 #Wrk-Btn {
   margin-top: 10px;
   padding: 5px 12px;
