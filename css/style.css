@@ -305,8 +305,8 @@ header {
 /* My Work */
 
 .my-work {
-  background-color: var(--clr-dark);
-  color: var(--clr-light);
+  background-color: #303030;
+  color: #fff;
   text-align: center;
 }
 
